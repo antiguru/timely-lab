@@ -15,6 +15,7 @@ fn main() {
             let index = scope.index();
             let stream_1 = scope.input_from(&mut input_1)
                 .inspect(move |x| println!("worker {}:\thello {:?}", index, x));
+            #[allow(unused)]
             let stream_2 = scope.input_from(&mut input_2)
                 .inspect(move |x| println!("worker {}:\thello {:?}", index, x));
 
