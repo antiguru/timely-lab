@@ -1,5 +1,5 @@
 use timely::dataflow::InputHandle;
-use timely::dataflow::operators::{Input, Inspect, Probe};
+use timely::dataflow::operators::{Input, Probe};
 
 fn main() {
     timely::execute_from_args(std::env::args(), |worker| {

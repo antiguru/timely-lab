@@ -1,9 +1,7 @@
 use rand::{thread_rng, Rng};
 use timely::dataflow::InputHandle;
+#[allow(unused)]
 use timely::dataflow::operators::{Input, Inspect, Probe, Operator, Capability};
-use timely::dataflow::channels::pact::Exchange;
-use std::collections::BinaryHeap;
-use std::cmp::Reverse;
 
 fn main() {
     // initializes and runs a timely dataflow.

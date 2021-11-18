@@ -1,8 +1,7 @@
 use rand::{thread_rng, Rng};
 use timely::dataflow::InputHandle;
+#[allow(unused)]
 use timely::dataflow::operators::{Input, Inspect, Probe, Operator};
-use timely::dataflow::channels::pact::Exchange;
-use std::collections::HashMap;
 
 fn main() {
     // initializes and runs a timely dataflow.
